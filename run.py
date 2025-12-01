@@ -890,7 +890,7 @@ def _max_close_between(px_df: pd.DataFrame, start_dt: pd.Timestamp, end_dt: pd.T
 
 
 # =========================================
-# Interactive MACD chart (dynamic loader for interactivemacd_stock_chart.py)
+# Interactive MACD chart (dynamic loader for macdchart.py)
 # - 放在本檔最後面
 # - 需求：st.session_state["ticker_multi_input"]、st.session_state["api_key"] 或 POLYGON_API_KEY
 # =========================================

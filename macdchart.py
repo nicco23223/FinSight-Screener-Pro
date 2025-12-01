@@ -14,6 +14,7 @@ from datetime import datetime, timezone
 from dateutil.relativedelta import relativedelta
 import plotly.graph_objects as go
 from plotly.subplots import make_subplots
+import streamlit as st 
 
 # ================= 基本設定 =================
 BASE = "https://api.polygon.io"
@@ -218,7 +219,7 @@ def plot_price_macd_vol(df: pd.DataFrame, ticker: str,
     fig.update_layout(xaxis3_range=[x0, x1],
                       yaxis_range=y1, yaxis2_range=y2, yaxis3_range=y3)
 
-    fig.show()
+    st.plotly_chart(fig, use_container_width=True)
 
 
 
